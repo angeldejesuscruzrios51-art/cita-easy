@@ -1,4 +1,3 @@
-# cita-easy
 # CitaFácil
 
 Aplicación web sencilla para agendar citas médicas. Proyecto escolar de ética en ingeniería de software.
@@ -7,11 +6,11 @@ Aplicación web sencilla para agendar citas médicas. Proyecto escolar de ética
 
 | Integrante | Usuario de GitHub | Rol |
 |---|---|---|
-| Nombre 1 | @usuario1 | Tech Lead / Arquitecto |
-| Nombre 2 | @usuario2 | Desarrollador Frontend |
-| Nombre 3 | @usuario3 | Desarrollador de Lógica |
-| Nombre 4 | @usuario4 | Dev de Integración |
-| Nombre 5 | @usuario5 | Auditor Forense / QA |
+| Angel | angeldejesuscruzrios51-art| Tech Lead / Arquitecto |
+| Yanis | @pootchanyanisyanis8-sys | Desarrolladora Frontend (HTML/CSS, diseño) |
+| Andrea | @andremalva-HJ | Desarrolladora de Lógica (JavaScript) |
+| Héctor Humberto | @USUARIO_DE_HECTOR | Saboteador / Dev de Integración |
+| bsgr18 | @bsgr18 | Auditor Forense / QA Principal |
 
 ## Estructura
 
@@ -22,3 +21,9 @@ Aplicación web sencilla para agendar citas médicas. Proyecto escolar de ética
 ## Flujo de trabajo
 
 Todo cambio entra por rama y Pull Request. Commits en inglés con Conventional Commits.
+
+| Rama | Responsable |
+|---|---|
+| `feature/ui` | Yanis |
+| `feature/logic` | Andrea |
+| `chore/optimization` | Héctor |
