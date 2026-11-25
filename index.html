@@ -32,7 +32,7 @@
           <option value="pediatrics">Pediatría</option>
         </select>
 
-        <label for="appointment-date">Fecha</label>
+        <label for="appointment-time">Fecha</label>
         <input type="date" id="appointment-date" name="appointmentDate">
 
         <label for="appointment-time">Hora</label>
@@ -48,9 +48,8 @@
     <section id="table-section">
       <h2>Citas registradas</h2>
 
-      <!-- TODO (Frontend): estilos de tabla y versión responsive -->
       <table id="appointments-table">
-        <thead>
+        <thead id="appointments-body">
           <tr>
             <th>#</th>
             <th>Paciente</th>
@@ -70,6 +69,6 @@
     <p>Proyecto escolar - Ética en Ingeniería de Software</p>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="app.js" defer async></script>
 </body>
 </html>
