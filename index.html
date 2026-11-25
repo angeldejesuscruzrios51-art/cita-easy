@@ -3,24 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CitaFácil - Citas Médicas</title>
+  <title>Citas Easy - Citas Médicas</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>CitaFácil</h1>
+    <h1>Citas Easy</h1>
     <p>Sistema de citas médicas</p>
   </header>
 
   <main>
     <section id="form-section">
       <h2>Agendar cita</h2>
-      <!-- TODO (Frontend): formulario en feature/ui -->
+
+      <!-- TODO (Frontend): rediseñar el formulario: layout, estilos, accesibilidad -->
+      <form id="appointment-form" novalidate>
+        <label for="patient-name">Nombre del paciente</label>
+        <input type="text" id="patient-name" name="patientName">
+
+        <label for="patient-age">Edad</label>
+        <input type="number" id="patient-age" name="patientAge">
+
+        <label for="specialty">Especialidad</label>
+        <select id="specialty" name="specialty">
+          <option value="">Selecciona una opción</option>
+          <option value="general">Medicina general</option>
+          <option value="dentist">Odontología</option>
+          <option value="pediatrics">Pediatría</option>
+        </select>
+
+        <label for="appointment-date">Fecha</label>
+        <input type="date" id="appointment-date" name="appointmentDate">
+
+        <label for="appointment-time">Hora</label>
+        <input type="time" id="appointment-time" name="appointmentTime">
+
+        <button type="submit" id="submit-btn">Agendar cita</button>
+      </form>
+
+      <!-- TODO (Lógica): mostrar aquí errores o confirmaciones -->
+      <div id="form-message" role="status"></div>
     </section>
 
     <section id="table-section">
       <h2>Citas registradas</h2>
-      <!-- TODO (Frontend): tabla en feature/ui -->
+
+      <!-- TODO (Frontend): estilos de tabla y versión responsive -->
+      <table id="appointments-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Paciente</th>
+            <th>Edad</th>
+            <th>Especialidad</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+          </tr>
+        </thead>
+        <!-- TODO (Lógica): las filas se generan desde app.js -->
+        <tbody id="appointments-body"></tbody>
+      </table>
     </section>
   </main>
 
